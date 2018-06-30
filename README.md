@@ -1,1 +1,1 @@
-#Simple Reminder Application
+Simple Reminder App
