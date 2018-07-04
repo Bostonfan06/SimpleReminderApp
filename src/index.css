@@ -1,5 +1,5 @@
 body {
-    background-color: teal;
+    background-color: black;
     padding: 20px;
     margin: 0;
   }
@@ -7,13 +7,17 @@ body {
     font-family: sans-serif;
     text-align: center;
   }
+
+  h1 {
+    color: orangered
+  }
   ul.header li {
     display: inline;
     list-style-type: none;
     margin: 0;
   }
   ul.header {
-    background-color: #111;
+    background-color: orangered;
     padding: 0;
   }
   ul.header li a {
