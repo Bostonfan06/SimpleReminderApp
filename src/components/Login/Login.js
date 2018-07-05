@@ -23,7 +23,7 @@ class Login extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    this.props.history.push('/tasks')
+    this.props.history.push('/home')
   }
 
  handleClick = event => {

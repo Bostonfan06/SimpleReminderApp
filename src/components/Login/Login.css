@@ -7,4 +7,11 @@
       margin: 0 auto;
       max-width: 320px;
     }
+
+    button {
+      margin-left: auto;
+      margin-right: auto;
+      display: block
+    }
   }
+
