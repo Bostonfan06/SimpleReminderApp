@@ -3,29 +3,25 @@ import Titles from './Titles.js';
 import Form from "./Form.js"
 import Storm from "./Storm.js"
 
-const API_KEY = "bb10e5c265331dc1306e4e5ecd0126e6";
 
 class Weather extends Component {
     state = {
         temperature: undefined,
-        city: undefined,
-        country: undefined,
+        id: undefined,
         humidity: undefined,
         description: undefined,
         error: undefined
     }
     getWeather = async (e) => {
         e.preventDefault();
-        const name = e.target.elements.city.value;
-        const country = e.target.elements.country.value
-        const api_call = await fetch(`http://api.openweathermap.org/data/2.5/forecast?id=${name}&APPID=${API_KEY}&units=metric`);
+        const name = e.target.elements.name.value;
+        const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?id=524901&APPID=c1e8cb3480bf557eada19288936711ee`);
         const data = await api_call.json();
-        if ( name && country){
+        if (name){
             console.log(data);
             this.setState({
                 temperature: data.main.temp,
-                city: data.name,
-                country: data.sys.country,
+                id: data.id,
                 humidity: data.main.humidity,
                 description: data.weather[0].description,
                 error: ""
@@ -33,8 +29,7 @@ class Weather extends Component {
         } else {
             this.setState({
                 temperature: undefined,
-                city: undefined,
-                country: undefined,
+                id: undefined,
                 humidity: undefined,
                 description: undefined,
                 error: "Please enter the value"
@@ -48,8 +43,7 @@ class Weather extends Component {
                 <Form getWeather={this.state.getWeather}/>
                 <Storm 
                 temperature={this.state.temperature}
-                city={this.state.name}
-                country={this.state.country}
+                city={this.state.id}
                 humidity={this.state.humidity}
                 description={this.state.description}
                 error={this.state.error}/>
