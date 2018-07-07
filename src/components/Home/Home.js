@@ -7,14 +7,14 @@ class Home extends Component {
         this.props.history.push("./tasks");
       }
 
-    handleWeather = event => {
+    handleMap = event => {
         event.preventDefault();
-        this.props.history.push("./weather");
+        this.props.history.push("./map");
       }
 
     handleCalendar = event => {
         event.preventDefault();
-        this.props.history.push("./calendar");
+        this.props.history.push("./weather");
       }
 
     handleDraw = event => {
@@ -25,11 +25,10 @@ class Home extends Component {
     render() {
       return (
         <div>
-              <button onClick={this.handleTask}>TASKS</button>
-              <button onClick={this.handleWeather}>WEATHER</button>
-              <button onClick={this.handleCalendar}>CALENDAR</button>
-              <button onClick={this.handleDraw}>DRAW</button>
-        
+              <button className="tasksbtn" onClick={this.handleTask}>TASKS</button>
+              <button className="mapbtn" onClick={this.handleMap}>MAP</button>
+              <button className="calendarbtn" onClick={this.handleCalendar}>WEATHER</button>
+              <button className="drawbtn" onClick={this.handleDraw}>DRAW</button>
         </div>
       );
       

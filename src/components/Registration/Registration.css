@@ -7,4 +7,25 @@
       margin: 0 auto;
       max-width: 320px;
     }
+
+    .emailbtn {
+      margin-bottom: 15px;
+
+    }
+  
+    .passwordbtn {
+      margin-bottom: 15px;
+      float: left
+      
+    }
+
+    .registerbtn {
+      background: white;
+      color: black;
+      font-weight: bold;
+      border-radius: 10px;
+      width: 100%;
+      height: 30px;
+      font-size: 15px
+      }
   }

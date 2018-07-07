@@ -31,35 +31,27 @@ class Registration extends Component {
     return (
       <div className="Login">
         <form onSubmit={this.handleSubmit}>
-          <FormGroup controlId="username" bsSize="large">
-            <ControlLabel>CREATE USERNAME</ControlLabel>
-            <FormControl
-              value={this.state.username}
-              onChange={this.handleChange}
-              type="username"
-            />
-          </FormGroup>
-          <FormGroup controlId="email" bsSize="large">
-            <ControlLabel>EMAIL</ControlLabel>
+          <FormGroup className="emailbtn" controlId="email" bsSize="large">
+            <ControlLabel className="controllabel">EMAIL:</ControlLabel>
             <FormControl
               value={this.state.email}
               onChange={this.handleChange}
               type="email"
             />
           </FormGroup>
-          <FormGroup controlId="password" bsSize="large">
-            <ControlLabel>PASSWORD</ControlLabel>
+          <FormGroup className="passwordbtn" controlId="password" bsSize="large">
+            <ControlLabel className="controllabel">PASSWORD:</ControlLabel>
             <FormControl
               value={this.state.password}
               onChange={this.handleChange}
-              type="password"
-            />
+              type="password"/>
           </FormGroup>
-          <Button
+          <Button 
+            className="registerbtn"
             block
             bsSize="large"
             type="submit">
-            Login
+            Register
           </Button>
         </form>
       </div>

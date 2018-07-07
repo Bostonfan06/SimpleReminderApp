@@ -13,6 +13,7 @@ class Tasks extends Component {
     this.deleteItem = this.deleteItem.bind(this);
   }
   
+
   addItem(e) {
     if (this._inputElement.value !== "") {
       var newItem = {
@@ -48,10 +49,10 @@ class Tasks extends Component {
     return (
       <div className="todoListMain">
         <div className="header">
-        <h1>GOALS</h1>
+        <h1 className="title">MY BACKPACK</h1>
           <form onSubmit={this.addItem}>
             <input ref={ (a) => this._inputElement = a}
-            placeholder="YOUR GOALS...">
+            placeholder="THINGS I NEED...">
             </input>
             <button type="submit">add</button>
           </form>

@@ -1,8 +1,16 @@
-@media all and (min-width: 480px) {
+@media all and (max-width: 480px) {
     .Login {
-      padding: 60px 0;
+      padding: 45px;
     }
   
+    .emailbtn {
+    margin-bottom: 15px
+  }
+
+  .passwordbtn {
+    margin-bottom: 15px;
+    float: left
+  }
     .Login form {
       margin: 0 auto;
       max-width: 320px;
@@ -13,5 +21,33 @@
       margin-right: auto;
       display: block
     }
+
+   .controllabel {
+      color: white;
+      margin-right: 10px
+
+    }
+
+    .loginbtn {
+      background: orange;
+      color: black;
+      font-weight: bold;
+      border-radius: 10px;
+      width: 100%;
+      height: 30px;
+      margin-bottom: 15px;
+      font-size: 15px
+    }
+    
+    .registerbtn {
+      background: white;
+      color: black;
+      font-weight: bold;
+      border-radius: 10px;
+      width: 100%;
+      height: 30px;
+      font-size: 15px
+      }
+
   }
 

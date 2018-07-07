@@ -1,5 +1,5 @@
 body {
-    background: black;
+    background-image: url('./assets/images/fog-mountain.jpg');
     padding: 20px;
     margin: 0;
   }
@@ -28,7 +28,7 @@ body {
     display: inline-block;
   }
   .content {
-    background-color: #FFF;
+    background-color: rgba(0, 0, 0, 0.619);
     padding: 20px;
   }
   .content h2 {

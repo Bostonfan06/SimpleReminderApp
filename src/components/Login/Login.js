@@ -35,8 +35,8 @@ class Login extends Component {
     return (
       <div className="Login">
         <form onSubmit={this.handleSubmit}>
-          <FormGroup controlId="email" bsSize="large">
-            <ControlLabel>Email</ControlLabel>
+          <FormGroup controlId="email" bsSize="large" className="emailbtn">
+            <ControlLabel className="controllabel">EMAIL:</ControlLabel>
             <FormControl
               autoFocus
               type="email"
@@ -44,22 +44,22 @@ class Login extends Component {
               onChange={this.handleChange}
             />
           </FormGroup>
-          <FormGroup controlId="password" bsSize="large">
-            <ControlLabel>Password</ControlLabel>
+          <FormGroup controlId="password" bsSize="large" className="passwordbtn">
+            <ControlLabel className="controllabel">PASSWORD:</ControlLabel>
             <FormControl
               value={this.state.password}
               onChange={this.handleChange}
               type="password"
             />
           </FormGroup>
-          <Button
+          <Button className="loginbtn"
             block
             bsSize="large"
             disabled={!this.validateForm()}
             type="submit">Login
           </Button>
         </form>
-        <Button
+        <Button className="registerbtn"
             onClick={this.handleClick}
             block
             bsSize="large"
