@@ -1,6 +1,6 @@
-# Simple Reminder App
+# One Life App
 
-This was our final project in class. I created a simple To-Do Application and adding a few new twist to it such as drawing pad, weather updates, and to-do list. We had to use all of skills learned in Bootcamp while using React.
+This was our final project in class. I created a simple To-Do Application and added a few new twist to it such as drawing pad, weather updates, and to-do list. We had to use all of skills learned in Bootcamp while using React.
 
 ## Built With
 
